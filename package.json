@@ -1,0 +1,13 @@
+{
+    "license": "UNLICENSED",
+    "scripts": {
+        "build": "yarn gulp sass",
+        "watch": "yarn gulp sass:watch"
+    },
+    "dependencies": {
+        "autoprefixer": "^10.2.4",
+        "gulp": "^4.0.2",
+        "gulp-postcss": "^9.0.0",
+        "gulp-sass": "^4.1.0"
+    }
+}
