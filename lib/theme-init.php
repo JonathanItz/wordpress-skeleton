@@ -57,8 +57,8 @@ function remove_comments() {
  * Enqueue scripts and styles
  */
 function enqueueu_scripts() {
-    $my_css_ver = date("ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . 'style.css' ));
-    $my_js_ver  = date("ymd-Gis", filemtime( plugin_dir_path( __FILE__ ) . 'js/custom.js' ));
+    $my_css_ver = date("ymd-Gis", filemtime( get_template_directory() . '/style.css' ));
+    $my_js_ver  = date("ymd-Gis", filemtime( get_template_directory() . '/js/main.js' ));
 
     wp_enqueue_style( 'style-name', get_stylesheet_uri(), false, $my_css_ver );
     wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/main.js', [ 'jquery' ], $my_js_ver, true );
