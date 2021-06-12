@@ -30,4 +30,4 @@ get_header();
     <h3>By Jonathan Itzen</h3>
 </div>
 
-<?php wp_footer(); ?>
+<?php get_footer(); ?>
